@@ -73,6 +73,9 @@ a.scrolldown:hover::after {
   width: 101%;
   height: 101%;
 }
+a.scrolldown.up {
+  rotate: 180deg;
+}
 
 .hamburger {
   z-index: 99;
@@ -234,6 +237,25 @@ aside.menu .sns a:hover svg {
 main {
   width: calc(100% - 300px);
 }
+main p.secttl {
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  font-family: "ubuntu", sans-serif;
+  font-weight: 700;
+  color: #fff;
+  font-size: 2.2rem;
+  padding-left: 15px;
+}
+main p.secttl::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 5px;
+  height: 100%;
+  background-color: #fff;
+}
 main section#home {
   position: relative;
   width: 100%;
@@ -389,7 +411,7 @@ main section#websites {
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
-  background-color: #ddf;
+  background-color: #99f;
 }
 main section#websites a:not(.scrolldown) {
   position: relative;
